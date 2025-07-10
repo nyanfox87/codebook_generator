@@ -1,0 +1,19 @@
+模逆元可透過費馬小定理求得：若 $a \not\equiv 0 \pmod{p}$，則 $a^{p-2}$ 為 $a$ 在模 $p$ 下的模逆元。
+
+例如：
+$$
+a \cdot a^{p-2} \equiv 1 \pmod{p}
+$$
+
+因此可以計算 $a^{p-2} \bmod p$ 作為 $a$ 的模逆元。
+
+應用於除法時，若有：
+$$
+\frac{a}{b} \equiv x \pmod{p}
+$$
+
+等價於：
+$$
+x \equiv a \cdot b^{-1} \pmod{p}
+$$
+其中 $b^{-1}$ 是 $b$ 的模逆元，可透過 $b^{p-2} \bmod p$ 計算。

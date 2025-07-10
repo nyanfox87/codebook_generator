@@ -1,0 +1,30 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{xeCJK}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{multicol}
+\input{style.tex}  % 樣式獨立在 style.tex
+
+\geometry{top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Codebook}
+\fancyhead[R]{\thepage}
+
+\setlength{\columnsep}{0.5cm}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\small\bfseries}{}{0pt}{}
+
+% 設定中英文主字體
+\setCJKmainfont{Noto Serif CJK TC}  % 或你系統有的字體如標楷體、思源宋體等
+\setmainfont{Noto Serif}
+
+
+\begin{document}
+\raggedcolumns
+\begin{multicols}{2}
+\input{generated_content.tex}
+\end{multicols}
+\end{document}
