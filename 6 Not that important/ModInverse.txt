@@ -1,19 +1,12 @@
-模逆元可透過費馬小定理求得：若 $a \not\equiv 0 \pmod{p}$，則 $a^{p-2}$ 為 $a$ 在模 $p$ 下的模逆元。
+The modular inverse can be obtained using Fermat's little theorem: if a is not congruent to 0 mod p (p is prime), then a^(p-2) is the modular inverse of a modulo p.
 
-例如：
-$$
-a \cdot a^{p-2} \equiv 1 \pmod{p}
-$$
+For example:
+a * a^(p-2) ≡ 1 (mod p)
 
-因此可以計算 $a^{p-2} \bmod p$ 作為 $a$ 的模逆元。
+Therefore compute a^(p-2) mod p as the modular inverse of a.
 
-應用於除法時，若有：
-$$
-\frac{a}{b} \equiv x \pmod{p}
-$$
-
-等價於：
-$$
-x \equiv a \cdot b^{-1} \pmod{p}
-$$
-其中 $b^{-1}$ 是 $b$ 的模逆元，可透過 $b^{p-2} \bmod p$ 計算。
+When applied to division, if
+a / b ≡ x (mod p)
+this is equivalent to
+x ≡ a * b^{-1} (mod p)
+where b^{-1} is the modular inverse of b and can be computed as b^(p-2) mod p.

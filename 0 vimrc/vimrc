@@ -1,0 +1,16 @@
+"variable
+let mapleader = ','
+
+"
+set number
+set relativenumber
+set noexpandtab
+set shiftwidth=4
+set tabstop=4
+
+inoremap kj <Esc>
+inoremap {<CR> {}<Left><CR><Esc>O
+tnoremap kj <C-\><C-n>
+nnoremap <leader>c :w<CR>:!g++ -std=c++20 % -o %:r && ./%:r<CR>
+nnoremap ' `
+nnoremap ` '

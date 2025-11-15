@@ -1,18 +1,15 @@
-\usepackage{listings}
+\usepackage{minted}
 \usepackage{xcolor}
 
-\lstset{
-  language=C++,
-  basicstyle=\ttfamily\scriptsize,
-  keywordstyle=\color{blue},
-  commentstyle=\color{gray},
-  stringstyle=\color{red},
-  numbers=left,
-  numberstyle=\tiny,
-  stepnumber=1,
-  numbersep=4pt,
-  breaklines=true,
-  showstringspaces=false,
-  tabsize=2,
-  frame=none
+% Set default minted options
+\setminted{
+    linenos,
+    breaklines,
+    fontsize=\normalsize,
+    frame=none,
+    bgcolor=white,
+    style=default,
+    numbersep=6pt,
+    numberblanklines=true,
+    escapeinside=@@
 }
